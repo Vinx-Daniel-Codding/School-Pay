@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SchoolPay | School Fee Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">S</div>
+            <div>
+                <h2>School<span>Pay</span></h2>
+                <small>Student Portal</small>
+            </div>
+        </div>
+
+        <nav>
+
+            <a href="#dashboard" class="active">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="#fees">
+                <span>₦</span> School Fees
+            </a>
+
+            <a href="#payment">
+                <span>💳</span> Make Payment
+            </a>
+
+            <a href="#transactions">
+                <span>↔</span> Transactions
+            </a>
+
+            <a href="#receipt">
+                <span>▣</span> Receipts
+            </a>
+
+            <a href="#help">
+                <span>?</span> Help Center
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <button id="themeBtn">🌙 Dark Mode</button>
+            <button id="logoutBtn">↪ Log Out</button>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button id="menuBtn" class="menu-btn">☰</button>
+
+            <div>
+                <p class="welcome-small">WELCOME BACK</p>
+                <h1>Student Dashboard</h1>
+            </div>
+
+            <div class="top-actions">
+
+                <button class="notification" id="notificationBtn">
+                    🔔
+                    <span>2</span>
+                </button>
+
+                <div class="avatar">
+                    VDC
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- STUDENT CARD -->
+
+        <section class="student-card">
+
+            <div class="student-info">
+
+                <div class="student-avatar">
+                  VDC  
+                </div>
+             
+                <div>
+                    <p>STUDENT</p>
+                    <h2 id="studentName">Vinx Daniel</h2>
+                    <span>
+                        Student ID: STU-2026-001
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="student-details">
+
+                <div>
+                    <small>CLASS</small>
+                    <strong>SS 1</strong>
+                </div>
+
+                <div>
+                    <small>SESSION</small>
+                    <strong>2026/2027</strong>
+                </div>
+
+                <div>
+                    <small>TERM</small>
+                    <strong>First Term</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboard">
+
+            <div class="section-title">
+                <div>
+                    <p>OVERVIEW</p>
+                    <h2>Fee Summary</h2>
+                </div>
+
+                <span class="session-badge">
+                    2026/2027 Academic Session
+                </span>
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">₦</div>
+
+                    <div>
+                        <span>Total Fees</span>
+                        <h2 id="totalFees">₦150,000</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">✓</div>
+
+                    <div>
+                        <span>Amount Paid</span>
+                        <h2 id="amountPaid">₦50,000</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">!</div>
+
+                    <div>
+                        <span>Balance</span>
+                        <h2 id="balance">₦100,000</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">%</div>
+
+                    <div>
+                        <span>Payment Progress</span>
+                        <h2 id="percentage">33%</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="progress-card">
+
+                <div class="progress-heading">
+
+                    <div>
+                        <h3>School Fee Progress</h3>
+                        <p>Keep your fees up to date.</p>
+                    </div>
+
+                    <strong id="progressText">33%</strong>
+
+                </div>
+
+                <div class="progress">
+                    <div
+                        id="progressBar"
+                        class="progress-bar">
+                    </div>
+                </div>
+
+                <p class="progress-note">
+                    ₦50,000 of ₦150,000 has been paid.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEE BREAKDOWN -->
+
+        <section id="fees" class="content-section">
+
+            <div class="section-title">
+
+                <div>
+                    <p>FEES</p>
+                    <h2>Fee Breakdown</h2>
+                </div>
+
+            </div>
+
+            <div class="table-card">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Fee</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                <strong>Tuition Fee</strong>
+                                <small>Academic tuition</small>
+                            </td>
+
+                            <td>₦100,000</td>
+
+                            <td>
+                                <span class="status pending">
+                                    Partially Paid
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <strong>Development Levy</strong>
+                                <small>School development</small>
+                            </td>
+
+                            <td>₦20,000</td>
+
+                            <td>
+                                <span class="status paid">
+                                    Paid
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <strong>Examination Fee</strong>
+                                <small>Term examination</small>
+                            </td>
+
+                            <td>₦15,000</td>
+
+                            <td>
+                                <span class="status pending">
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <strong>ICT Fee</strong>
+                                <small>Computer facilities</small>
+                            </td>
+
+                            <td>₦15,000</td>
+
+                            <td>
+                                <span class="status pending">
+                                    Pending
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- PAYMENT -->
+
+        <section id="payment" class="content-section">
+
+            <div class="section-title">
+
+                <div>
+                    <p>PAYMENT</p>
+                    <h2>Make a Payment</h2>
+                </div>
+
+            </div>
+
+
+            <div class="payment-layout">
+
+                <div class="payment-form-card">
+
+                    <form id="paymentForm">
+
+                        <label>Student Name</label>
+
+                        <input
+                            type="text"
+                            id="paymentStudent"
+                            value="Vinx Daniel"
+                            readonly>
+
+
+                        <label>Student ID</label>
+
+                        <input
+                            type="text"
+                            value="STU-2026-001"
+                            readonly>
+
+
+                        <label>Select Fee</label>
+
+                        <select id="feeType">
+
+                            <option value="">
+                                Select fee
+                            </option>
+
+                            <option value="Tuition Fee">
+                                Tuition Fee
+                            </option>
+
+                            <option value="Examination Fee">
+                                Examination Fee
+                            </option>
+
+                            <option value="ICT Fee">
+                                ICT Fee
+                            </option>
+
+                            <option value="Development Levy">
+                                Development Levy
+                            </option>
+
+                        </select>
+
+
+                        <label>Amount</label>
+
+                        <input
+                            type="number"
+                            id="paymentAmount"
+                            placeholder="Enter amount">
+
+
+                        <label>Payment Method</label>
+
+                        <div class="payment-methods">
+
+                            <label class="method">
+                                <input
+                                    type="radio"
+                                    name="method"
+                                    value="card">
+                                💳 Card
+                            </label>
+
+                            <label class="method">
+                                <input
+                                    type="radio"
+                                    name="method"
+                                    value="bank">
+                                🏦 Bank
+                            </label>
+
+                            <label class="method">
+                                <input
+                                    type="radio"
+                                    name="method"
+                                    value="transfer">
+                                📱 Transfer
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="pay-button">
+
+                            Continue Payment →
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="security-card">
+
+                    <div class="security-icon">
+                        🔐
+                    </div>
+
+                    <h3>Secure Payment</h3>
+
+                    <p>
+                        This demonstration shows how a school
+                        payment interface can work.
+                    </p>
+
+                    <div class="security-list">
+                        <p>✓ Student verification</p>
+                        <p>✓ Payment confirmation</p>
+                        <p>✓ Transaction reference</p>
+                        <p>✓ Digital receipt</p>
+                    </div>
+
+                    <div class="demo-warning">
+                        DEMO MODE
+                        <br>
+                        No real money is transferred.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRANSACTIONS -->
+
+        <section id="transactions" class="content-section">
+
+            <div class="section-title">
+
+                <div>
+                    <p>HISTORY</p>
+                    <h2>Recent Transactions</h2>
+                </div>
+
+                <input
+                    type="text"
+                    id="searchTransaction"
+                    placeholder="Search transactions...">
+
+            </div>
+
+
+            <div class="table-card">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Reference</th>
+                            <th>Fee</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="transactionList">
+
+                        <tr>
+                            <td>
+                                <strong>TXN-001245</strong>
+                            </td>
+
+                            <td>Tuition Fee</td>
+
+                            <td>26 Sep 2026</td>
+
+                            <td>₦50,000</td>
+
+                            <td>
+                                <span class="status paid">
+                                    Successful
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECEIPT -->
+
+        <section id="receipt" class="content-section">
+
+            <div class="section-title">
+
+                <div>
+                    <p>DOCUMENTS</p>
+                    <h2>Payment Receipt</h2>
+                </div>
+
+            </div>
+
+
+            <div class="receipt-card" id="receiptCard">
+
+                <div class="receipt-header">
+
+                    <div class="school-logo">
+                        SP
+                    </div>
+
+                    <div>
+                        <h2>SchoolPay Academy</h2>
+                        <p>Official Payment Receipt</p>
+                    </div>
+
+                </div>
+
+
+                <div class="receipt-line"></div>
+
+
+                <div class="receipt-grid">
+
+                    <div>
+                        <small>Student</small>
+                        <strong id="receiptStudent">
+                            Vinx Daniel
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small>Student ID</small>
+                        <strong>
+                            STU-2026-001
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small>Amount</small>
+                        <strong id="receiptAmount">
+                            ₦50,000
+                        </strong>
+                    </div>
+
+                    <div>
+                        <small>Reference</small>
+                        <strong id="receiptReference">
+                            TXN-001245
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <div class="receipt-success">
+                    ✓ Payment Successful
+                </div>
+
+                <button
+                    class="print-button"
+                    onclick="window.print()">
+
+                    Print Receipt
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- HELP -->
+
+        <section id="help" class="content-section">
+
+            <div class="help-card">
+
+                <div>
+                    <p>NEED HELP?</p>
+
+                    <h2>
+                        We're here to help.
+                    </h2>
+
+                    <span>
+                        Contact your school administrator
+                        if you have questions about your fees.
+                    </span>
+                </div>
+
+                <button onclick="showHelp()">
+                    Contact School
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div>
+                <h2>School<span>Pay</span></h2>
+                <p>
+                    A modern school fee management interface.
+                </p>
+            </div>
+
+            <div>
+                <p>© 2026 SchoolPay Demo</p>
+                <p>Built with HTML • CSS • JavaScript</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- TOAST -->
+
+    <div id="toast" class="toast">
+        <strong id="toastTitle">Success</strong>
+        <p id="toastMessage"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
